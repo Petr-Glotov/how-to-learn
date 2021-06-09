@@ -133,45 +133,36 @@
   font-weight: bold;
 }
 
-.section-title__table {
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.table__cell {
+  width: 250px;
+  padding-top: 60px;
+}
+
+.table {
   width: 1100px;
   display: flex;
   margin: 0 auto;
-}
-
-.digits {
-  padding: 100px 0 100px 0;
-}
-
-.section-title {
-  display: flex;
-  justify-content: center;
-}
-
-.section-subtitle {
-  display: flex;
-  justify-content: center;
-}
-
-.section-title__cell {
-  display: flex;
   list-style-type: none;
   justify-content: space-between;
   overflow: hidden;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.section-title__cell__list {
-  width: 250px;
-  padding-top: 60px;
-}
-
 .section-title {
+  width: 60%;
+  display: flex;
+  justify-content: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -179,26 +170,64 @@
 }
 
 .section-subtitle {
+  width: 60%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
-.section-title__heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
 
-.section-title__text {
+.table__text {
   margin: 0;
-  padding-top: 20px;
+  padding: 20px 0 0;
 }
 
-.section-title__text:nth-child(2n) {
-  padding-top: 20px;
+.feynman {
+  width: 100%;
+  min-height: 890px;
+  background: #f2f2f2 url(../images/feynman.png) no-repeat left bottom;
+  background-size: 867px 637px;
+  padding: 100px 0 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin: 70px 0 0;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 48px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
