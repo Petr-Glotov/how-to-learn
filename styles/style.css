@@ -17,36 +17,21 @@
   background-color: #f2f2f2;
   margin: auto;
   position: relative;
-  box-sizing: border-box;
   display: flex;
+  overflow: hidden;
 }
-
-.header__container {
-  /*flex-direction: column;*/
-  width: 50%;
-  height: 100%;
-  position:relative;
-}
-
-/*.header__container-left {
-  background-color: fuchsia;
-}*/
-
-/*.header__container-right {
-  background-color: #0e2ad7;
-}*/
 
 .logo {
   width: 183px;
   height: 32px;
   background: no-repeat url(../images/logo_place_header.svg);
   position: absolute;
-  display: block;
 }
 
-.logo_place-header {
+.logo_place_header {
   top: 30px;
   left: 64px;
+  z-index: 1;
 }
 
 .header__title {
@@ -57,7 +42,8 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin: auto 64px;
+  margin: 0 0 0 64px;
+  z-index: 1;
 }
 
 .header__subtitle {
@@ -68,6 +54,13 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
+  margin: 0;
+  z-index: 1;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -78,9 +71,8 @@
   bottom: 0;
   background: no-repeat url(../images/header-image.png);
   background-size: cover;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
-  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -92,6 +84,53 @@
   right: 0;
   top: 64px;
   z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  padding: 100px 0 0;
+}
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__paragraph:nth-child(2n) {
+  padding: 30px 0;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* и элемента с модификатором вида ключ-значение */
