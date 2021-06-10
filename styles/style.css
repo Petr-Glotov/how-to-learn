@@ -260,3 +260,37 @@
   right: -210px;
   top: 0;
 }
+
+.footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 350px;
+  background-color: #1F1F1F;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__columns {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.place_footer {
+  width: 183px;
+  height: 35px;
+  background: no-repeat url(../images/logo_place_footer.svg);
+  display: flex;
+}
+
+.footer__author {
+  color: #f2f2f2;
+}
+
+.footer__author {
+  margin: 0;
+}
