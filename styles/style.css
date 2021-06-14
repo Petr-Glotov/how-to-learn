@@ -64,7 +64,7 @@
 }
 
 .header__link:hover {
-  text-decoration: underline;
+  opacity: .5;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -233,7 +233,7 @@
 }
 
 .feynman__link:hover {
-  text-decoration: underline;
+  opacity: .5;
 }
 
 .kaufman {
@@ -336,7 +336,7 @@
 }
 
 .footer__column-link:hover {
-  text-decoration: underline;
+  opacity: .5;
 }
 
 
