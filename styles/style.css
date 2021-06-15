@@ -30,8 +30,13 @@
 .logo_place_header {
   top: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
+  transition: opacity .3s ease-in-out;
+}
+
+.logo_place_header:hover {
+  opacity: .5;
 }
 
 .header__title {
@@ -60,6 +65,7 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity .3s ease-in-out;
 }
 
 .header__link:hover {
@@ -229,6 +235,7 @@
   position: absolute;
   top: 50%;
   right: 48px;
+  transition: opacity .3s ease-in-out;
 }
 
 .feynman__link:hover {
@@ -335,6 +342,7 @@
 .footer__column-link {
   text-decoration: none;
   color: #f2f2f2;
+  transition: opacity .3s ease-in-out;
 }
 
 .footer__column-link:hover {
