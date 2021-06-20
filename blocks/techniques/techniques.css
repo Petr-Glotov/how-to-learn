@@ -1,0 +1,6 @@
+.techniques {
+  position: relative;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+}
